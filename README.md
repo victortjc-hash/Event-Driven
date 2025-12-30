@@ -49,4 +49,19 @@ The next steps of the workshop is to Rules match incoming events and routes them
 
 From the diagram, I will create an Orders event Bus rule to match an event with a com.aws.orders source to an API Gateway endpoint, Invoke a AWS Step function and send events to an Amazon SNS (Simple Nofication Service) 
 
+API Destination Challenge
 
+1. Create an API Destination
+<img width="1579" height="767" alt="Screenshot 2025-12-30 at 2 29 01 PM" src="https://github.com/user-attachments/assets/5ada67a7-c538-4254-b74d-91db332ccec1" />
+
+2. Configure an Eventbridge Rule to target Event
+ <img width="1599" height="721" alt="Screenshot 2025-12-30 at 2 41 58 PM" src="https://github.com/user-attachments/assets/8c6b06d6-207d-4e5a-8294-4af650f60191" />
+ridge API Destination.
+
+3. Sent test orders Event.
+I will send Order Notifcation for testing: 
+```
+{ "category": "lab-supplies", "value": 415, "location": "us-east" }
+```
+<img width="1565" height="775" alt="Screenshot 2025-12-30 at 4 42 52 PM" src="https://github.com/user-attachments/assets/abaed6f6-795d-4a4c-99d1-1def20b9ed18" />
+<img width="1223" height="763" alt="Screenshot 2025-12-30 at 4 44 39 PM" src="https://github.com/user-attachments/assets/bd9f2720-c682-46f2-aefb-5dc3e376702e" />
