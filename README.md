@@ -36,5 +36,17 @@ Log Group: "/aws/events/orders
 
 4. Create Rule.
 
-5. Test Dev Rule
-6. 
+5. Test Dev Rule (as below)
+<img width="1580" height="695" alt="Screenshot 2025-12-30 at 1 54 55 PM" src="https://github.com/user-attachments/assets/ce6ba715-7918-46a6-8607-5a68ff48dbb8" />
+-Send
+
+7. Check Cloudwatch Log to see event is received: 
+<img width="1604" height="712" alt="Screenshot 2025-12-30 at 1 56 01 PM" src="https://github.com/user-attachments/assets/e883be7b-3b8b-4dd4-a836-51df4460f69a" />
+
+Working with EventBridge Rules.
+The next steps of the workshop is to Rules match incoming events and routes them to targets for processing.
+<img width="1079" height="393" alt="Screenshot 2025-12-30 at 1 58 05 PM" src="https://github.com/user-attachments/assets/e084f077-bd1e-42d1-8c22-28c7af317c03" />
+
+From the diagram, I will create an Orders event Bus rule to match an event with a com.aws.orders source to an API Gateway endpoint, Invoke a AWS Step function and send events to an Amazon SNS (Simple Nofication Service) 
+
+
