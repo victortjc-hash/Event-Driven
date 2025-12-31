@@ -65,3 +65,44 @@ I will send Order Notifcation for testing:
 ```
 <img width="1565" height="775" alt="Screenshot 2025-12-30 at 4 42 52 PM" src="https://github.com/user-attachments/assets/abaed6f6-795d-4a4c-99d1-1def20b9ed18" />
 <img width="1223" height="763" alt="Screenshot 2025-12-30 at 4 44 39 PM" src="https://github.com/user-attachments/assets/bd9f2720-c682-46f2-aefb-5dc3e376702e" />
+
+
+Step Functions Challenge
+In this module, I will implement add a new rule to existing event bus Orders that will only process orders coming from EU using an AWS Step function.
+
+1. Create a new rule (EUOrdersRule) in EventBus (Orders)
+ <img width="1710" height="709" alt="Screenshot 2025-12-31 at 10 19 26 AM" src="https://github.com/user-attachments/assets/306a1ead-e4e9-4260-9fbe-d28acf6c4e31" />
+With Target: Step Function
+<img width="1696" height="736" alt="Screenshot 2025-12-31 at 10 20 15 AM" src="https://github.com/user-attachments/assets/49b9d9c1-43da-492e-8e21-ae626395592b" />
+
+
+Test Send Event - Success
+Using test event - 
+```
+{ "category": "office-supplies", "value": 300, "location": "eu-west" }
+```
+<img width="1585" height="772" alt="Screenshot 2025-12-31 at 10 18 55 AM" src="https://github.com/user-attachments/assets/b95c336a-a429-41c8-adc3-c087a2a11ad2" />
+
+SNS Challenge
+
+In this module, I will add another rule to Orders event bus with the name USLocationSupplyRule.
+This event pattern is to amtch detail locations in US (East/West) and category "lab-supplies".
+
+Created a new rule as below: 
+<img width="1634" height="733" alt="Screenshot 2025-12-31 at 10 30 40 AM" src="https://github.com/user-attachments/assets/889a9fc6-2530-4ff6-bea1-54e34bfd3b13" />
+
+Target: SNS Topic
+<img width="1739" height="719" alt="Screenshot 2025-12-31 at 10 33 59 AM" src="https://github.com/user-attachments/assets/2054a8c3-79d3-42f6-b7b2-970e5ac4f0cb" />
+
+Test: 
+Send Event using:
+```
+{ "category": "lab-supplies", "value": 415, "location": "us-east" }
+```
+<img width="1751" height="710" alt="Screenshot 2025-12-31 at 10 39 20 AM" src="https://github.com/user-attachments/assets/dc5b98c3-062a-4c55-baa4-dbdc494d870a" />
+
+Confirmation:
+<img width="1735" height="746" alt="Screenshot 2025-12-31 at 10 39 40 AM" src="https://github.com/user-attachments/assets/1b5b8a45-2f14-4be5-93e5-97b8d96228b1" />
+
+
+
