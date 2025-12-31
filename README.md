@@ -105,4 +105,23 @@ Confirmation:
 <img width="1735" height="746" alt="Screenshot 2025-12-31 at 10 39 40 AM" src="https://github.com/user-attachments/assets/1b5b8a45-2f14-4be5-93e5-97b8d96228b1" />
 
 
+Scheduling Expressions for rules.
+
+This is for rules that self-trigger on an automated schedule in EventBridge. 
+1. Create a schedule in EventBridge Scheduler.
+
+Parameters as below:
+
+<img width="1632" height="776" alt="Screenshot 2025-12-31 at 2 26 20 PM" src="https://github.com/user-attachments/assets/4c2f8edb-ac80-4aa3-b49c-416f43341744" />
+<img width="1735" height="746" alt="Screenshot 2025-12-31 at 10 39 40 AM" src="https://github.com/user-attachments/assets/16443989-e709-4041-94ba-b44a749cc235" />
+
+2. Verify Scheduled Message Delivery
+Using Cloud Watch > Logs
+<img width="1695" height="646" alt="Screenshot 2025-12-31 at 2 29 51 PM" src="https://github.com/user-attachments/assets/0ffbb436-5328-4a39-a6c9-0646a2fbe8a9" />
+
+The log shows success triggers every minute as scheduled. 
+
+Success. 
+
+
 
